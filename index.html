@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Dark Portfolio</title>
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER (Glassmorphism) -->
+  <header class="header">
+    <div class="logo">&#9673;</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="avatar">
+        <!-- SVG Dev Illustration -->
+        <img src="assets/minha-foto.jpg" alt="Minha Foto" style="object-fit: cover;">
+      </div>
+      <div class="hero-text">
+        <h1>Bem-vindo ao meu portfólio!<br><span>Jefferson F. Teodoro</span></h1>
+        <p>Profissional apaixonado por desenvolvimento, interfaces modernas e soluções criativas. Aqui você encontra meus projetos, habilidades e cursos de programação e tecnologia.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="about" id="about">
+    <div class="about-card">
+      <h2>About Me</h2>
+      <p>Desenvolvedor focado em criar experiências digitais de alto impacto, com domínio em tecnologias modernas e busca constante por inovação.</p>
+      <div class="tech-icons">
+        <span class="icon html" title="HTML5"></span>
+        <span class="icon css" title="CSS3"></span>
+        <span class="icon js" title="JavaScript"></span>
+        <span class="icon" title="Git & GitHub" style="font-size:1.1rem;">&#128187;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE / SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Experience & Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="icon dev"></span>
+        <h3>HTML5, CSS3 & JS</h3>
+        <p>Desenvolvimento web moderno, responsivo e com foco em performance.</p>
+      </div>
+      <div class="skill-card">
+        <span class="icon code"></span>
+        <h3>Java & Spring Boot</h3>
+        <p>Back-End robusto, APIs e sistemas completos.</p>
+      </div>
+      <div class="skill-card">
+        <span class="icon rocket"></span>
+        <h3>React Native</h3>
+        <p>Apps mobile com experiência nativa e integrações em tempo real.</p>
+      </div>
+      <div class="skill-card">
+        <span class="icon brain"></span>
+        <h3>Cloud & Versionamento</h3>
+        <p>AWS Cloud Practitioner, Git & GitHub, deploys e versionamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/podologia.png" alt="Projeto Podologia" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projeto+Podologia';">
+        <div class="project-info">
+          <h3>Projeto Podologia</h3>
+          <p>Sistema em Java para gerenciamento de clientes e atendimentos de podologia, com interface gráfica Swing e persistência em arquivos .txt.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Swing</span><span>Persistência</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JeffersonTeodoro/ProjetoPodologia" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/bitcoin.gif" alt="Projetor A8" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projetor+A8';">
+        <div class="project-info">
+          <h3>Projetor A8</h3>
+          <p>Aplicativo em React Native para cotação de Bitcoins em tempo real.</p>
+          <div class="project-tags">
+            <span>React Native</span><span>API</span><span>Mobile</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JeffersonTeodoro/ProjetorA8" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/carro1.png" alt="Projeto Carros" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projeto+Carros';">
+        <div class="project-info">
+          <h3>Projeto Carros</h3>
+          <p>Site para apresentação de modelos automotivos usando HTML e JavaScript.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>JavaScript</span><span>Frontend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JeffersonTeodoro/projeto-carros" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/chess-board.png" alt="Projeto Chess System Java" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Chess+System+Java';">
+        <div class="project-info">
+          <h3>Projeto Chess System Java</h3>
+          <p>Simulador de xadrez completo em Java, rodando diretamente no console (terminal).</p>
+          <div class="project-tags">
+            <span>Java</span><span>Console</span><span>Jogo</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/JeffersonTeodoro/chess-system-java" class="btn btn-secondary" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS & CERTIFICAÇÕES -->
+  <section class="certifications" id="certifications">
+    <h2>Cursos & Certificações</h2>
+    <ul class="cert-list">
+      <li>Engenharia de Software – Udemy (Jornada do Dev)</li>
+      <li>Java Spring Boot – Desenvolvimento Back-End</li>
+      <li>HTML, CSS e JavaScript – Frontend Web</li>
+      <li>AWS Cloud Practitioner (Fundamentos de Nuvem)</li>
+      <li>Git & GitHub – Versionamento de Código</li>
+    </ul>
+  </section>
+
+  <!-- VISUAL CENTRAL SECTION -->
+  <section class="visual-central">
+    <div class="futuristic-symbol">
+      <div class="orbit orbit1"></div>
+      <div class="orbit orbit2"></div>
+      <div class="orbit orbit3"></div>
+      <div class="central-icon">
+        <span>&#9673;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contato</h2>
+    <p>Vamos construir algo incrível juntos.<br>Entre em contato ou acesse minhas redes:</p>
+    <div class="social-icons">
+      <a href="https://github.com/JeffersonTeodoro" class="icon github" title="GitHub" target="_blank"></a>
+      <a href="https://www.linkedin.com/in/jefferson-fran%C3%A7a-teodoro-6258ba215/" class="icon linkedin" title="LinkedIn" target="_blank"></a>
+      <a href="mailto:jeffersonfranca199@gmail.com" class="icon email" title="Email"></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Futurist Dev. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
