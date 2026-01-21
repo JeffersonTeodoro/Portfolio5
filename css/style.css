@@ -1,3 +1,46 @@
+/* HERO PROFILE FULL */
+.hero-headline {
+  color: var(--color-primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.2rem 0;
+  letter-spacing: 0.5px;
+}
+.hero-location {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  margin: 0 0 0.7rem 0;
+}
+.hero-bio {
+  color: var(--color-text-secondary);
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  max-width: 420px;
+}
+.hero-social {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.hero-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary) 60%, var(--color-glow) 100%);
+  box-shadow: 0 0 18px 4px var(--color-glow);
+  transition: var(--transition);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.hero-social a:hover, .hero-social a:focus {
+  background: linear-gradient(135deg, var(--color-glow) 60%, var(--color-primary) 100%);
+  box-shadow: 0 0 32px 8px var(--color-glow);
+  transform: scale(1.12);
+}
 /* CERTIFICATIONS */
 .certifications {
   padding: 5rem 1.5rem 2rem 1.5rem;
@@ -329,8 +372,11 @@ body {
   color: #fff;
   font-size: 1.2rem;
   position: absolute;
-  left: 50%; top: 50%; transform: translate(-50%, -50%);
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Space Grotesk', monospace;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 .icon.js::before {
   content: 'JS';
