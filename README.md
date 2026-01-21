@@ -4,7 +4,7 @@
 Este projeto foi criado para apresentar minhas **habilidades técnicas**, **projetos**, e minha **evolução como desenvolvedor**, com foco em oportunidades profissionais na área de tecnologia.
 
 🔗 **Acesse o portfólio online:**  
-👉 https://stellar-torte-b152fc.netlify.app/
+👉 https://jeffersonteodoro.github.io/Portfolio5/
 
 ---
 
