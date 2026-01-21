@@ -34,7 +34,8 @@
   transition: var(--transition);
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  /* Remove qualquer SVG extra de notebook/monitor */
 }
 .hero-social a:hover, .hero-social a:focus {
   background: linear-gradient(135deg, var(--color-glow) 60%, var(--color-primary) 100%);
