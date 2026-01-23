@@ -1,3 +1,45 @@
+/* HERO SOCIAL ICONS PADRONIZADOS */
+.hero-content a[href*="github"],
+.hero-content a[href*="linkedin"],
+.hero-content a[href*="mailto"],
+.hero-content a[href*="wa.me"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2.5px solid var(--color-primary);
+  color: #fff;
+  margin: 0 0.18rem;
+  transition: var(--transition);
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+}
+.hero-content a[href*="github"] svg,
+.hero-content a[href*="linkedin"] svg,
+.hero-content a[href*="mailto"] svg,
+.hero-content a[href*="wa.me"] svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.hero-content a[href*="github"]:hover,
+.hero-content a[href*="linkedin"]:hover,
+.hero-content a[href*="mailto"]:hover,
+.hero-content a[href*="wa.me"]:hover,
+.hero-content a[href*="github"]:focus,
+.hero-content a[href*="linkedin"]:focus,
+.hero-content a[href*="mailto"]:focus,
+.hero-content a[href*="wa.me"]:focus {
+  background: var(--color-primary);
+  box-shadow: 0 0 32px 8px var(--color-glow);
+  border-color: var(--color-glow);
+  color: #fff;
+  outline: none;
+}
 /* HERO PROFILE FULL */
 .hero-headline {
   color: var(--color-primary);
@@ -608,8 +650,9 @@ body {
   width: 48px;
   height: 48px;
   font-size: 2rem;
-  background: linear-gradient(135deg, var(--color-primary) 60%, var(--color-glow) 100%);
-  box-shadow: 0 0 24px 6px var(--color-glow);
+  background: transparent;
+  box-shadow: none;
+  border: 2.5px solid var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -617,14 +660,19 @@ body {
   color: #fff;
   transition: var(--transition);
   position: relative;
+  border: none;
+  outline: none;
+  margin: 0 0.2rem;
+  filter: drop-shadow(0 0 8px var(--color-glow));
 }
-.social-icons .icon.github::before { content: '\f09b'; font-family: 'Font Awesome 5 Free'; font-weight: 900; }
-.social-icons .icon.linkedin::before { content: '\f0e1'; font-family: 'Font Awesome 5 Free'; font-weight: 900; }
-.social-icons .icon.email::before { content: '\f0e0'; font-family: 'Font Awesome 5 Free'; font-weight: 900; }
+/* Remove Font Awesome pseudo-elements for github/linkedin/email, as SVGs are used */
 .social-icons .icon:hover, .social-icons .icon:focus {
-  box-shadow: 0 0 32px 8px var(--color-glow);
+  background: var(--color-primary);
+  box-shadow: 0 0 40px 12px var(--color-glow);
+  color: #fff;
+  border-color: var(--color-glow);
   transform: scale(1.12);
-  background: linear-gradient(135deg, var(--color-glow) 60%, var(--color-primary) 100%);
+  outline: none;
 }
 
 /* FOOTER */
@@ -686,6 +734,90 @@ body {
   .about-card, .cert-list li { padding: 0.7rem 0.5rem; font-size: 0.98rem; }
   .project-info { padding: 1rem 0.5rem 0.7rem 0.5rem; }
   .project-card img { height: 90px; }
+  .cert-list {
+    padding-left: 0.2rem;
+    margin: 0.5rem 0;
+  }
+  .cert-list li {
+    font-size: 1.02rem;
+    padding: 0.7rem 0.3rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+  .cert-list li a {
+    font-size: 1.02rem;
+    padding: 0.2rem 0.1rem;
+    width: 100%;
+    display: block;
+  }
+  .cert-list li::before {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .skill-card, .project-card {
+    padding: 1rem 0.5rem;
+    font-size: 0.98rem;
+  }
+  .about-card {
+    font-size: 0.98rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-list {
+    padding-left: 0.2rem;
+    margin: 0.7rem 0;
+  }
+  .cert-list li {
+    font-size: 1.08rem;
+    padding: 0.8rem 0.4rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.7rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+  }
+  .cert-list li a {
+    font-size: 1.08rem;
+    padding: 0.2rem 0.1rem;
+    width: 100%;
+    display: block;
+  }
+  .cert-list li::before {
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
+  }
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .skill-card, .project-card {
+    padding: 1.2rem 0.7rem;
+    font-size: 1.01rem;
+  }
+  .about-card {
+    font-size: 1.01rem;
+    padding: 1rem 0.7rem;
+  }
+  .footer {
+    font-size: 0.95rem;
+    padding: 0.9rem 0.2rem;
+  }
+}
 }
 
 /* SCROLLBAR */
