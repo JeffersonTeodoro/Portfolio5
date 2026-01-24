@@ -1,3 +1,60 @@
+/* HERO SOCIAL ICONS CONTAINER */
+.hero-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 1.2rem 0 0 0;
+  width: 100%;
+}
+.hero-social a {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  border: 2.5px solid var(--color-primary);
+  color: #fff;
+  transition: var(--transition);
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+}
+.hero-social a svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.hero-social a:hover,
+.hero-social a:focus {
+  background: var(--color-primary);
+  box-shadow: 0 0 32px 8px var(--color-glow);
+  border-color: var(--color-glow);
+  color: #fff;
+  outline: none;
+}
+@media (max-width: 600px) {
+  .hero-social {
+    gap: 0.7rem;
+    margin: 1.1rem 0 0 0;
+  }
+  .hero-social a {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+  }
+  .hero-social a svg {
+    width: 22px;
+    height: 22px;
+  }
+}
 @media (max-width: 600px) {
   .hero-content {
     flex-direction: column;
