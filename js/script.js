@@ -1,3 +1,71 @@
+// Redireciona para login.html se não estiver nela
+if (!window.location.pathname.endsWith('login.html')) {
+  if (!sessionStorage.getItem('portfolio_logged_in')) {
+    window.location.href = 'login.html';
+  }
+}
+// Ao fazer login com sucesso, marca sessão como logada
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('login-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      // ...existing code...
+      if (!email.value.trim() || !password.value.trim()) {
+        // ...existing code...
+        return;
+      }
+      // ...existing code...
+      sessionStorage.setItem('portfolio_logged_in', '1');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1200);
+    });
+  }
+});
+// =====================
+// Login Page Demo Script
+// =====================
+// Jefferson Teodoro - Portfólio
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('login-form');
+  const email = document.getElementById('email');
+  const password = document.getElementById('password');
+  const message = document.getElementById('login-message');
+  const togglePassword = document.querySelector('.toggle-password');
+  if (togglePassword) {
+    const eyeOpen = togglePassword.querySelector('.eye-open');
+    const eyeClosed = togglePassword.querySelector('.eye-closed');
+    togglePassword.addEventListener('click', () => {
+      if (password.type === 'password') {
+        password.type = 'text';
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = 'block';
+      } else {
+        password.type = 'password';
+        eyeOpen.style.display = 'block';
+        eyeClosed.style.display = 'none';
+      }
+    });
+  }
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      message.textContent = '';
+      message.classList.remove('success');
+      if (!email.value.trim() || !password.value.trim()) {
+        message.textContent = 'Preencha todos os campos.';
+        message.classList.remove('success');
+        return;
+      }
+      message.textContent = 'Login realizado! Redirecionando...';
+      message.classList.add('success');
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1200);
+    });
+  }
+});
 // =============================
 // FUTURISTIC PORTFOLIO JS
 // =============================
