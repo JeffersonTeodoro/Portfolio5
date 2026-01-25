@@ -1,3 +1,31 @@
+// =====================
+// Fundo animado de linhas/flashes na index.html
+// =====================
+document.addEventListener('DOMContentLoaded', function () {
+  let bg = document.querySelector('.bg-animated-bubbles');
+  if (!bg) {
+    bg = document.createElement('div');
+    bg.className = 'bg-animated-bubbles';
+    document.body.prepend(bg);
+  }
+  // Limpa linhas antigas
+  bg.innerHTML = '';
+  for (let i = 0; i < 24; i++) {
+    const l = document.createElement('span');
+    l.className = 'flash-line';
+    l.style.left = Math.random() * 100 + 'vw';
+    l.style.top = Math.random() * 100 + 'vh';
+    l.style.width = (Math.random() * 120 + 60) + 'px';
+    l.style.height = (Math.random() * 3.5 + 1.5) + 'px';
+    l.style.background = 'linear-gradient(90deg, rgba(96,165,250,0.22) 0%, rgba(37,99,235,0.18) 100%)';
+    l.style.borderRadius = '2px';
+    const angle = Math.random() * 60 - 30;
+    l.style.setProperty('--angle', angle + 'deg');
+    l.style.animationDuration = (Math.random() * 8 + 8) + 's';
+    l.style.animationDelay = (Math.random() * 8) + 's';
+    bg.appendChild(l);
+  }
+});
 // Redireciona para login.html se não estiver nela
 if (!window.location.pathname.endsWith('login.html')) {
   if (!sessionStorage.getItem('portfolio_logged_in')) {

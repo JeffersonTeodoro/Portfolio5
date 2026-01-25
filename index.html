@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- ANIMAÇÃO DE FUNDO (BOLHAS/PARTÍCULAS) -->
+  <div class="bg-animated-bubbles" aria-hidden="true"></div>
   <!-- HEADER (Glassmorphism) -->
   <header class="header">
-    <div class="logo">&#9673;</div>
+    <a href="login.html" class="logo" title="Ir para Login">&#9673;</a>
     <nav class="nav">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -110,6 +112,19 @@
   <section class="projects" id="projects">
     <h2>Featured Projects</h2>
     <div class="projects-grid">
+            <div class="project-card">
+              <img src="assets/editor-texto.png" alt="Editor de Texto Básico" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Editor+de+Texto';">
+              <div class="project-info">
+                <h3>Basic Text Editor</h3>
+                <p>A simple text editor written in Java, with a Swing graphical interface, and functions to open, save, and edit .txt files.</p>
+                <div class="project-tags">
+                  <span>Java</span><span>Swing</span><span>Editor</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/JeffersonTeodoro/EditorDeTextoBasico" class="btn btn-secondary" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </div>
       <div class="project-card">
         <img src="assets/podologia.png" alt="Projeto Podologia" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projeto+Podologia';">
         <div class="project-info">
@@ -123,8 +138,21 @@
           </div>
         </div>
       </div>
+        <div class="project-card">
+          <img src="assets/lista-de-compras.png" alt="Projeto Lista de Compras" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Lista+de+Compras';">
+          <div class="project-info">
+            <h3>Shopping List Project</h3>
+            <p>Web application for managing shopping lists, adding, removing, and marking items as purchased. Developed in Java.</p>
+            <div class="project-tags">
+              <span>Java</span><span>Web</span><span>Lista</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JeffersonTeodoro/ProjetoListaDeCompras" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
       <div class="project-card">
-        <img src="assets/bitcoin.gif" alt="Projetor A8" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projetor+A8';">
+        <img src="assets/bitcoin.gif" alt="A8 Projector" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projetor+A8';">
         <div class="project-info">
           <h3>A8 projector</h3>
           <p>React Native app for real-time Bitcoin quotes.</p>
@@ -137,7 +165,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="assets/carro1.png" alt="Projeto Carros" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projeto+Carros';">
+        <img src="assets/carro1.png" alt="Project Cars" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Projeto+Carros';">
         <div class="project-info">
           <h3>Project Cars</h3>
           <p>Website for showcasing automotive models using HTML and JavaScript.</p>
@@ -150,7 +178,7 @@
         </div>
       </div>
       <div class="project-card">
-        <img src="assets/chess-board.png" alt="Projeto Chess System Java" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Chess+System+Java';">
+        <img src="assets/chess-board.png" alt="Java Chess System Project" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x180/1a1036/a259ff?text=Chess+System+Java';">
         <div class="project-info">
           <h3>Java Chess System Project</h3>
           <p>Complete chess simulator in Java, running directly in the console (terminal).</p>
@@ -298,7 +326,7 @@
 
   <!-- CURSOS & CERTIFICAÇÕES -->
   <section class="certifications" id="certifications">
-    <h2>Cursos & Certificações</h2>
+    <h2>Courses & Certifications</h2>
       <ul class="cert-list">
         <li>
          <a href="https://drive.google.com/file/d/1RATQp6YYB6wJRsjz8hLmjtPDQ7VDvzU7/view" target="_blank" title="Ver Certificado Python" style="color:#eaeaea;font-weight:600;text-decoration:none;">
@@ -384,5 +412,28 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script>
+  // Animação de linhas/flashes diagonais no fundo
+  document.addEventListener('DOMContentLoaded', function () {
+    const bg = document.querySelector('.bg-animated-bubbles');
+    if (!bg) return;
+    for (let i = 0; i < 14; i++) {
+      const l = document.createElement('span');
+      l.className = 'flash-line';
+      l.style.left = Math.random() * 100 + 'vw';
+      l.style.top = Math.random() * 100 + 'vh';
+      l.style.width = (Math.random() * 90 + 60) + 'px';
+      l.style.height = (Math.random() * 2.5 + 1.2) + 'px';
+      l.style.background = 'rgba(96,165,250,0.13)';
+      l.style.borderRadius = '2px';
+      const angle = Math.random() * 60 - 30;
+      l.style.setProperty('--angle', angle + 'deg');
+      l.style.animationDuration = (Math.random() * 7 + 7) + 's';
+      l.style.animationDelay = (Math.random() * 7) + 's';
+      bg.appendChild(l);
+    }
+  });
+  </script>
+
 </body>
 </html>

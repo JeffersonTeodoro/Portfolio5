@@ -1,3 +1,53 @@
+/* Fundo animado de bolhas/partículas para index.html */
+/* Fundo animado de linhas/flashes diagonais para index.html */
+.bg-animated-bubbles {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.flash-line {
+  position: absolute;
+  opacity: 0.18;
+  box-shadow: 0 0 24px 2px #2563eb33;
+  animation: flashMove 12s linear infinite;
+}
+@keyframes flashMove {
+  0% {
+    opacity: 0.18;
+    filter: blur(0.5px);
+    transform: translateY(0) rotate(var(--angle, 0deg));
+  }
+  60% {
+    opacity: 0.12;
+  }
+  100% {
+    opacity: 0;
+    filter: blur(2.5px);
+    transform: translateY(-120vh) rotate(var(--angle, 0deg));
+  }
+}
+
+/* Fundo animado de circuitos/linhas para login.html */
+.bg-animated-circuit {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.circuit-line {
+  position: absolute;
+  opacity: 0.7;
+  box-shadow: 0 0 16px 2px #2563eb33;
+  animation: circuitMove linear infinite;
+}
+@keyframes circuitMove {
+  0% { opacity: 0.7; filter: blur(0.5px); }
+  60% { opacity: 0.5; }
+  100% { opacity: 0; filter: blur(2.5px); top: 0; }
+}
 /* =====================
    Login Page Styles
    Author: Jefferson Teodoro
@@ -854,8 +904,9 @@ body {
   align-items: center;
   min-height: 40vh;
   background: none;
+  /* Garante que o conteúdo fique acima da animação de fundo */
   position: relative;
-  z-index: 1;
+    z-index: 100;
 }
 .futuristic-symbol {
   position: relative;

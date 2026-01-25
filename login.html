@@ -13,6 +13,8 @@
   </style>
 </head>
 <body>
+  <!-- ANIMAÇÃO DE CIRCUITOS/TECNOLOGIA -->
+  <div class="bg-animated-circuit" aria-hidden="true"></div>
   <main class="login-main">
     <section class="login-card" aria-label="Login Jefferson Teodoro">
       <h1 class="login-title"> Welcome!</h1>
@@ -41,5 +43,45 @@
     </section>
   </main>
   <script src="js/script.js"></script>
+  <script>
+  // Animação de circuitos/linhas tecnológicas
+  document.addEventListener('DOMContentLoaded', function () {
+    const bg = document.querySelector('.bg-animated-circuit');
+    if (!bg) return;
+    for (let i = 0; i < 12; i++) {
+      const l = document.createElement('span');
+      l.className = 'circuit-line';
+      l.style.left = Math.random() * 100 + 'vw';
+      l.style.top = Math.random() * 100 + 'vh';
+      l.style.width = (Math.random() * 60 + 40) + 'px';
+      l.style.height = (Math.random() * 2.5 + 1.5) + 'px';
+      l.style.background = 'rgba(96,165,250,0.18)';
+      l.style.borderRadius = '2px';
+      l.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
+      l.style.animationDuration = (Math.random() * 7 + 7) + 's';
+      l.style.animationDelay = (Math.random() * 7) + 's';
+      bg.appendChild(l);
+    }
+  });
+  </script>
+/* Fundo animado de circuitos/linhas para login.html */
+.bg-animated-circuit {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.circuit-line {
+  position: absolute;
+  opacity: 0.7;
+  box-shadow: 0 0 16px 2px #2563eb33;
+  animation: circuitMove linear infinite;
+}
+@keyframes circuitMove {
+  0% { opacity: 0.7; filter: blur(0.5px); }
+  60% { opacity: 0.5; }
+  100% { opacity: 0; filter: blur(2.5px); top: 0; }
+}
 </body>
 </html>
