@@ -1,85 +1,27 @@
-# 💼 Portfólio Profissional — Jefferson Teodoro
+# Portfólio — Jefferson França Teodoro
 
-🚀 Bem-vindo ao meu portfólio!  
-Este projeto foi criado para apresentar minhas **habilidades técnicas**, **projetos**, e minha **evolução como desenvolvedor**, com foco em oportunidades profissionais na área de tecnologia.
+Portfólio público de Jefferson França Teodoro, com foco em desenvolvimento Backend Java. O site usa HTML5, CSS3 e JavaScript, sem dependências de framework ou etapa de build.
 
-🔗 **Acesse o portfólio online:**  
-👉 https://jeffersonteodoro.github.io/Portfolio5/
+## Acessar
 
----
+- GitHub Pages: https://jeffersonteodoro.github.io/Portfolio5/
+- Início: `index.html`
+- Vídeos: `videos.html`
 
-## 👨‍💻 Sobre mim
+## Estrutura
 
-Sou um **entusiasta de tecnologia e desenvolvimento de software**, apaixonado por aprender, criar soluções práticas e evoluir constantemente como profissional.  
-Tenho experiência com **desenvolvimento front-end**, lógica de programação e projetos pessoais que demonstram minha capacidade técnica e organização de código.
+- `index.html`, `videos.html`: páginas públicas do portfólio.
+- `login.html`: página antiga mantida por compatibilidade, mas desativada. O formulário demonstrativo e qualquer referência à autenticação foram removidos; o portfólio não exige login.
+- `css/style.css`, `js/script.js`: estilos responsivos e interações.
+- `assets/`: fotografia, vídeos, favicon e currículo HTML para download.
+- `Certificados/`: certificados originais preservados.
 
-🎯 **Objetivo:** Atuar como desenvolvedor e crescer profissionalmente na área de tecnologia.
+## Projetos em destaque
 
----
+Os links são exibidos conforme sua disponibilidade pública. O repositório Barbix-Releases distribui versões e informa que o código-fonte principal não está publicado nele; por isso, o portfólio oferece o aplicativo Web e as releases, sem apresentar esse repositório como código-fonte. A API Inteligente e a pasta `taskmanager` da API-REST possuem links públicos. O projeto Banking Design Patterns não tinha um repositório público identificável na revisão, então seu card não inclui um link fictício.
 
-## 🛠️ Tecnologias & Ferramentas
+## Desenvolvimento local
 
-- **Front-end:**  
-  - HTML5  
-  - CSS3  
-  - JavaScript  
+Abra `index.html` no navegador ou sirva a pasta com qualquer servidor HTTP estático. Para publicar no GitHub Pages, mantenha as páginas e pastas na raiz publicada do repositório e preserve os caminhos relativos.
 
-- **Back-end / Lógica:**  
-  - Java  
-  - JavaFX  
-
-- **Versionamento:**  
-  - Git  
-  - GitHub  
-
-- **Outros:**  
-  - Netlify (deploy)  
-  - Figma (referência de design)
-
----
-
-## 📂 O que você encontra neste portfólio
-
-✔️ Apresentação profissional  
-✔️ Projetos práticos com código limpo  
-✔️ Interface moderna e responsiva  
-✔️ Foco em usabilidade e organização  
-✔️ Demonstração real das minhas habilidades
-
----
-
-## 📌 Projetos em destaque
-
-🔹 **Calculadora de IMC**  
-Aplicação desenvolvida em Java para cálculo do Índice de Massa Corporal, com foco em lógica, boas práticas e clareza no código.
-
-🔹 **Gerador de Senhas**  
-Projeto que gera senhas seguras utilizando Java, explorando conceitos de segurança e aleatoriedade.
-
-🔹 **Relógio Digital**  
-Projeto visual que demonstra domínio de interface e lógica de tempo.
-
-> 📌 Todos os projetos estão disponíveis no meu GitHub.
-
----
-
-## 🌐 Contato
-
-📧 **Email:** (adicione aqui se quiser)  
-💼 **LinkedIn:** (adicione aqui)  
-🐙 **GitHub:** https://github.com/JeffersonTeodoro
-
----
-
-## 🚀 Diferencial
-
-✅ Aprendizado contínuo  
-✅ Projetos práticos e funcionais  
-✅ Organização de código  
-✅ Comprometimento com evolução profissional  
-
-Se você é recrutador ou tech lead, ficarei muito feliz em conversar sobre como posso contribuir com seu time 🚀
-
----
-
-⭐ Se este repositório chamou sua atenção, não esqueça de deixar uma estrela!
+O currículo em HTML pode ser aberto no navegador e impresso ou salvo como PDF. Não foram adicionados vínculos profissionais, resultados ou datas que não constavam nos dados disponíveis.

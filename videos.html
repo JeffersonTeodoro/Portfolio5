@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeos dos Projetos | Jefferson Teodoro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0B">
+  <meta name="description" content="Demonstrações em vídeo de projetos de Jefferson França Teodoro.">
+  <title>Vídeos de projetos | Jefferson França Teodoro</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { background: #10182a; color: #eaf6ff; font-family: 'Inter', Arial, sans-serif; }
-  </style>
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo" title="Voltar ao Portfólio">&#9673;</a>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="#videos">Vídeos</a></li>
-      </ul>
+  <a class="skip-link" href="#videos">Pular para os vídeos</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Jefferson Teodoro — início"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Jefferson<span class="brand-accent">.dev</span></span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+      <a href="index.html#home">Início</a>
+      <a href="index.html#projects">Projetos</a>
+      <a href="#videos" aria-current="page">Vídeos</a>
+      <a href="index.html#contact">Contato</a>
     </nav>
   </header>
-  <main class="videos-main" id="videos">
-    <section class="videos-section">
-      <h1 class="videos-title">Project Videos</h1>
-      <p class="videos-desc">Check out video demonstrations of the main projects developed.</p>
+  <main class="videos-main section-shell" id="videos">
+    <section class="videos-section" aria-labelledby="videos-title">
+      <p class="eyebrow">Demonstrações</p>
+      <h1 class="videos-title" id="videos-title">Vídeos dos projetos</h1>
+      <p class="videos-desc">Demonstrações disponíveis dos projetos de aprendizado.</p>
       <div class="videos-grid">
-        <div class="video-card" id="video-lista-compras">
-          <h2>Shopping List Project</h2>
-          <video controls poster="assets/lista-de-compras.png">
+        <article class="video-card" id="video-lista-compras">
+          <h2>Lista de Compras</h2>
+          <video controls preload="metadata" aria-label="Demonstração em vídeo do projeto Lista de Compras">
             <source src="assets/Projeto Lista de Compras.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
+            Seu navegador não reproduz vídeo HTML5. <a href="assets/Projeto Lista de Compras.mp4">Baixar o vídeo</a>.
           </video>
-        </div>
-        <div class="video-card" id="video-editor-texto">
-          <h2>Basic Text Editor</h2>
-          <video controls poster="assets/editor-texto.png">
+        </article>
+        <article class="video-card" id="video-editor-texto">
+          <h2>Editor de Texto Básico</h2>
+          <video controls preload="metadata" aria-label="Demonstração em vídeo do Editor de Texto Básico">
             <source src="assets/editor-texto-demo.mp4" type="video/mp4">
-            Seu navegador não suporta vídeo HTML5.
+            Seu navegador não reproduz vídeo HTML5. <a href="assets/editor-texto-demo.mp4">Baixar o vídeo</a>.
           </video>
-        </div>
-        <!-- Adicione mais vídeos conforme necessário -->
+        </article>
       </div>
-      <a href="index.html" class="back-link" style="margin-top:2rem;display:inline-block;">Back to Portfolio</a>
+      <a href="index.html#projects" class="video-back">Voltar aos projetos <span aria-hidden="true">→</span></a>
     </section>
   </main>
+  <footer class="site-footer"><p>© <span id="current-year">2026</span> Jefferson França Teodoro.</p><a href="index.html#home" class="back-to-top">Voltar ao início ↑</a></footer>
+  <script src="js/script.js" defer></script>
 </body>
 </html>

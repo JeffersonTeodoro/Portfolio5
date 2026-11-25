@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="26" y1="12" x2="935" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#312617"/><stop offset=".45" stop-color="#11131b"/><stop offset="1" stop-color="#102c38"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4af37"/><stop offset="1" stop-color="#00bfff"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" stroke="#fff" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="960" height="360" fill="url(#bg)"/><rect width="960" height="360" fill="url(#grid)"/>
+  <rect x="63" y="62" width="535" height="237" rx="17" fill="#131820" stroke="#d4af37" stroke-opacity=".4"/>
+  <text x="90" y="101" fill="#d4af37" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">TASK MANAGER / API</text>
+  <path d="M90 119h481" stroke="#fff" stroke-opacity=".1"/>
+  <rect x="89" y="141" width="230" height="131" rx="12" fill="#1b222b"/>
+  <text x="110" y="169" fill="#91a2ae" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">TAREFAS</text>
+  <circle cx="112" cy="194" r="7" stroke="#00bfff" stroke-width="2"/><path d="m109 194 2 2 4-5" stroke="#00bfff" stroke-width="1.5"/><path d="M131 194h138" stroke="#a9b5bf" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="112" cy="222" r="7" stroke="#d4af37" stroke-width="2"/><path d="M131 222h158" stroke="#66737e" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="112" cy="250" r="7" stroke="#7c3aed" stroke-width="2"/><path d="M131 250h115" stroke="#66737e" stroke-width="5" stroke-linecap="round"/>
+  <rect x="334" y="141" width="238" height="131" rx="12" fill="#1b222b"/>
+  <text x="354" y="169" fill="#91a2ae" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">TESTES / REST</text>
+  <rect x="354" y="184" width="197" height="30" rx="8" fill="#102a31"/><text x="369" y="204" fill="#79d9ee" font-family="Consolas,monospace" font-size="12">GET /api/tasks</text>
+  <rect x="354" y="226" width="197" height="30" rx="8" fill="#2b281c"/><text x="369" y="246" fill="#e0c267" font-family="Consolas,monospace" font-size="12">201 / created</text>
+  <circle cx="732" cy="179" r="78" fill="#121a20" stroke="url(#accent)" stroke-width="2"/>
+  <path d="m695 178 23 24 53-57" stroke="#00bfff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="648" y="292" fill="#c6d0d8" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">TESTÁVEL · DOCUMENTADA</text>
+</svg>
